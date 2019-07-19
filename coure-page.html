@@ -4,9 +4,122 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document2</title>
+  <title>coure-page</title>
 </head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    font-size: 100px;
+    color: #374246;
+  }
+  body {
+    background: #26B2C9;
+  }
+  ul, li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+  }
+  .content {
+    width: 85%;
+    margin: .1rem auto .3rem;
+    font-size: .18rem;
+  }
+  .content .item-wrapper {
+    display: inline-block;
+    width: 100%;
+    margin: .2rem 0 0;
+  }
+  .content .item-wrapper:nth-of-type(odd) {
+    text-align: left;
+  }
+  .content .item-wrapper:nth-of-type(even) {
+    text-align: right;
+  }
+  .content .item-wrapper:nth-of-type(even) .item-img-wrapper {
+    float: right;
+  }
+  .content .item-img-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 38%;
+    padding-top: 38%;
+  }
+  .content .item-img-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: .06rem;
+    height: .06rem;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+  }
+  .content .item-img-wrapper::after {
+    content: '';
+    clear: both;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: .06rem;
+    height: .06rem;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+  }
+  .content .item-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .content .item-title {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10% .1rem;
+    font-weight: bold;
+  }
+</style>
 <body>
-  
+  <div class="wrapper">
+    <div class="content">
+      <a class="item-wrapper" href="#">
+        <div class="item-img-wrapper">
+          <img class="item-img" src="./images/1.png">
+        </div>
+        <p class="item-title">法院概况</p>
+      </a>
+      <a class="item-wrapper" href="#">
+        <div class="item-img-wrapper">
+          <img class="item-img" src="./images/1.png">
+        </div>
+        <p class="item-title">法院概况</p>
+      </a>
+      <a class="item-wrapper" href="#">
+        <div class="item-img-wrapper">
+          <img class="item-img" src="./images/1.png">
+        </div>
+        <p class="item-title">法院概况</p>
+      </a>
+      <a class="item-wrapper" href="#">
+        <div class="item-img-wrapper">
+          <img class="item-img" src="./images/1.png">
+        </div>
+        <p class="item-title">法院概况</p>
+      </a>
+      <a class="item-wrapper" href="#">
+        <div class="item-img-wrapper">
+          <img class="item-img" src="./images/1.png">
+        </div>
+        <p class="item-title">法院概况</p>
+      </a>
+    </div>
+  </div>
 </body>
 </html>
